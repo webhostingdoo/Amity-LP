@@ -147,7 +147,7 @@ export default function Home() {
         }`}
       >
         {/* Top bar */}
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 lg:px-8 py-3">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 lg:px-8 py-9">
           <a href="#" className="shrink-0">
             <Image
               src="/images/logos/amity-logo.png"
@@ -180,7 +180,7 @@ export default function Home() {
           <div className="flex items-center gap-3 ml-auto">
             <a
               href="tel:+17275098278"
-              className="hidden sm:inline-block lg:hidden px-4 py-2 text-sm font-semibold rounded bg-gold text-navy hover:brightness-110 transition"
+              className="hidden sm:inline-block lg:hidden px-4 py-2 text-sm font-semibold rounded btn-primary transition"
             >
               (727) 509-8278
             </a>
@@ -213,103 +213,104 @@ export default function Home() {
             </div>
             <a
               href="tel:+17275098278"
-              className="px-5 py-2.5 text-sm font-semibold rounded bg-gold text-navy hover:brightness-110 transition whitespace-nowrap"
+              className="px-5 py-2.5 text-sm font-semibold rounded btn-primary transition whitespace-nowrap"
             >
               (727) 509-8278
             </a>
           </div>
         </nav>
 
-        {/* Full overlay navigation */}
-        {mobileMenuOpen && (
-          <div className="fixed inset-0 z-[100] flex">
-            {/* LEFT PANEL - white/cream */}
-            <div className="relative z-10 w-full lg:w-[35%] bg-[#f7f5f0] flex flex-col overflow-y-auto">
+      </header>
 
-              {/* Mobile only: hero image at top */}
-              <div className="lg:hidden relative h-[220px] w-full shrink-0">
-                <img
-                  src="/images/hero/amity-2-desktop.jpg"
-                  alt="Amity Palm Beach"
-                  className="w-full h-full object-cover"
-                />
-                {/* Mobile top bar over image */}
-                <div className="absolute inset-x-0 top-0 flex items-center justify-between px-4 py-3 bg-navy/80">
-                  <img src="/images/logos/amity-logo.png" alt="Amity Palm Beach" className="h-8 w-auto" />
-                  <a href="tel:+17275098278" className="px-4 py-2 text-sm font-semibold bg-navy text-white rounded">
-                    (727) 509-8278
-                  </a>
-                  <button onClick={() => setMobileMenuOpen(false)} className="text-white text-2xl p-1">{"\u2715"}</button>
-                </div>
-              </div>
+      {/* Full overlay navigation */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 z-[100] flex">
+          {/* LEFT PANEL - white/cream */}
+          <div className="relative z-10 w-full lg:w-[35%] bg-[#f7f5f0] flex flex-col overflow-y-auto h-full">
 
-              {/* Desktop logo area */}
-              <div className="hidden lg:flex items-start gap-3 px-10 pt-10 pb-6">
-                <img src="/images/logos/amity-logo.png" alt="Amity Palm Beach" className="h-10 w-auto" />
-              </div>
-
-              {/* Title + stars - desktop only */}
-              <div className="hidden lg:block px-10 pb-8">
-                <p className="text-xs tracking-[0.2em] uppercase text-gray-500 mb-1">Amity Palm Beach</p>
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill="#D4AF37">
-                      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
-                    </svg>
-                  ))}
-                </div>
-              </div>
-
-              {/* Nav links */}
-              <nav className="flex flex-col px-8 lg:px-10 py-4 lg:py-0 gap-1">
-                {navLinks.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    onClick={() => { setActiveLink(link.href); setMobileMenuOpen(false); }}
-                    className={`py-4 text-lg font-light border-b border-gray-200 transition-colors ${
-                      activeLink === link.href ? "text-[#0e2a47] font-semibold" : "text-gray-600 hover:text-[#0e2a47]"
-                    }`}
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </nav>
-
-              {/* Bottom link */}
-              <div className="px-8 lg:px-10 mt-6">
-                <div className="border-t border-gray-300">
-                  <a href="#" className="flex items-center justify-between py-5 text-xl font-light text-gray-800 hover:text-[#0e2a47] transition-colors">
-                    <span>Amity Palm Beach</span>
-                    <span className="text-2xl">&rarr;</span>
-                  </a>
-                  <div className="border-t border-gray-300"></div>
-                </div>
-              </div>
-            </div>
-
-            {/* RIGHT PANEL - hero image, desktop only */}
-            <div className="hidden lg:block flex-1 relative">
+            {/* Mobile only: hero image at top */}
+            <div className="lg:hidden relative h-[220px] w-full shrink-0">
               <img
                 src="/images/hero/amity-2-desktop.jpg"
                 alt="Amity Palm Beach"
                 className="w-full h-full object-cover"
               />
-              {/* X close button */}
-              <button
-                onClick={() => setMobileMenuOpen(false)}
-                className="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm text-white text-xl flex items-center justify-center hover:bg-white/30 transition"
-              >
-                {"\u2715"}
-              </button>
+              {/* Mobile top bar over image */}
+              <div className="absolute inset-x-0 top-0 flex items-center justify-between px-4 py-3 bg-navy/80">
+                <img src="/images/logos/amity-logo.png" alt="Amity Palm Beach" className="h-8 w-auto" />
+                <a href="tel:+17275098278" className="px-4 py-2 text-sm font-semibold bg-navy text-white rounded">
+                  (727) 509-8278
+                </a>
+                <button onClick={() => setMobileMenuOpen(false)} className="text-white text-2xl p-1">{"\u2715"}</button>
+              </div>
+            </div>
+
+            {/* Desktop logo area */}
+            <div className="hidden lg:flex items-start gap-3 px-10 pt-10 pb-6">
+              <img src="/images/logos/amity-logo.png" alt="Amity Palm Beach" className="h-10 w-auto" />
+            </div>
+
+            {/* Title + stars - desktop only */}
+            <div className="hidden lg:block px-10 pb-8">
+              <p className="text-xs tracking-[0.2em] uppercase text-gray-500 mb-1">Amity Palm Beach</p>
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill="#D4AF37">
+                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+
+            {/* Nav links */}
+            <nav className="flex flex-col px-8 lg:px-10 py-4 lg:py-0 gap-1">
+              {navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => { setActiveLink(link.href); setMobileMenuOpen(false); }}
+                  className={`py-4 text-lg font-light border-b border-gray-200 transition-colors ${
+                    activeLink === link.href ? "text-[#0e2a47] font-semibold" : "text-gray-600 hover:text-[#0e2a47]"
+                  }`}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+
+            {/* Bottom link */}
+            <div className="px-8 lg:px-10 mt-6">
+              <div className="border-t border-gray-300">
+                <a href="#" className="flex items-center justify-between py-5 text-xl font-light text-gray-800 hover:text-[#0e2a47] transition-colors">
+                  <span>Amity Palm Beach</span>
+                  <span className="text-2xl">&rarr;</span>
+                </a>
+                <div className="border-t border-gray-300"></div>
+              </div>
             </div>
           </div>
-        )}
-      </header>
+
+          {/* RIGHT PANEL - hero image, desktop only */}
+          <div className="hidden lg:block flex-1 relative">
+            <img
+              src="/images/hero/amity-2-desktop.jpg"
+              alt="Amity Palm Beach"
+              className="w-full h-full object-cover"
+            />
+            {/* X close button */}
+            <button
+              onClick={() => setMobileMenuOpen(false)}
+              className="absolute top-6 right-6 w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm text-white text-xl flex items-center justify-center hover:bg-white/30 transition"
+            >
+              {"\u2715"}
+            </button>
+          </div>
+        </div>
+      )}
 
       <main>
         {/* ═══════════════════════ HERO ═══════════════════════ */}
-        <section className="relative min-h-[100svh] flex items-center">
+        <section className="relative min-h-[100svh] flex items-start">
           {/* Background picture element with 3 sources */}
           <picture className="absolute inset-0 w-full h-full">
             <source
@@ -340,15 +341,15 @@ export default function Home() {
           />
 
           {/* Hero content */}
-          <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 pt-10 pb-32 md:pt-14 md:pb-40">
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 pt-28 sm:pt-36 md:pt-64 pb-16">
             <p className="text-sm md:text-base uppercase tracking-[0.2em] text-gold mb-4">
               24/7 Medical Detox &amp; Residential Inpatient
             </p>
             <h1 className="font-maistra text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight max-w-2xl">
               Top-rated Addiction Treatment
             </h1>
-            <hr className="border-t-2 border-gold w-64 mb-6" />
-            <p className="text-2xl max-w-2xl text-white/75 mb-10 leading-relaxed">
+            <hr className="border-t-2 border-white w-64 mt-8 mb-8" />
+            <p className="text-2xl max-w-lg text-white/75 mb-10 leading-relaxed">
               One call handles everything: free assessment, travel coordination,
               and same-day admission. Available 24/7.
             </p>
@@ -357,7 +358,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 mb-12 items-start">
               <a
                 href="tel:+17275098278"
-                className="inline-block px-8 py-4 text-center font-semibold rounded bg-gold text-navy hover:brightness-110 transition"
+                className="inline-block px-8 py-4 text-center font-semibold rounded btn-primary transition"
               >
                 <span className="text-xl uppercase">(727) 509-8278</span>
                 <br />
@@ -563,7 +564,7 @@ export default function Home() {
                 </ul>
                 <a
                   href="tel:+17275098278"
-                  className="inline-block px-8 py-4 text-center font-semibold rounded bg-gold text-navy hover:brightness-110 transition"
+                  className="inline-block px-8 py-4 text-center font-semibold rounded btn-primary transition"
                 >
                   <span className="text-lg">(727) 509-8278</span>
                   <br />
@@ -816,7 +817,7 @@ export default function Home() {
                 </p>
                 <a
                   href="tel:+17275098278"
-                  className="inline-block px-8 py-4 text-center font-semibold rounded bg-gold text-navy hover:brightness-110 transition"
+                  className="inline-block px-8 py-4 text-center font-semibold rounded btn-primary transition"
                 >
                   Call for Immediate Admissions
                   <br />
@@ -1033,7 +1034,7 @@ export default function Home() {
               </div>
               <button
                 type="submit"
-                className="w-full py-4 rounded font-semibold text-lg bg-gold text-navy hover:brightness-110 transition"
+                className="w-full py-4 rounded font-semibold text-lg btn-primary transition"
               >
                 Submit
               </button>
