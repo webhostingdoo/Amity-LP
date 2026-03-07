@@ -22,14 +22,11 @@ export default function InsuranceLogos() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="max-w-3xl mb-12">
           <h2 className="font-maistra text-3xl md:text-5xl text-white mb-4">
-            Making Treatment Accessible
+            Your Insurance Is Probably Already on This List
           </h2>
           <hr className="border-t-2 border-gold w-20 mb-6" />
           <p className="text-white/75 text-lg leading-relaxed">
-            Unsure about your coverage? We can help! We partner with many
-            insurance companies and offer a free benefits check to help you
-            understand your coverage options. Find your provider below or
-            contact us today.
+            Most PPO plans cover the full cost of treatment — and we&rsquo;ll confirm yours in minutes. Check your provider below, or call us and we&rsquo;ll walk you through exactly what you&rsquo;re covered for, at no cost and with no obligation.
           </p>
         </div>
 

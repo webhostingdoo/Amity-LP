@@ -5,24 +5,24 @@ import Image from "next/image";
 const treatmentCards = [
   {
     title: "Medical Drug & Alcohol Detox",
-    image: "/images/gallery/Amiti-Palm-Beach-Detox-facility.jpg",
+    image: "/images/gallery/drug-and-alcohol-detox.jpg",
     alt: "Drug and Alcohol Detox - Dallas, TX",
     description:
-      "A clinically supervised process to manage withdrawal safely and comfortably. Our medical professionals provide 24/7 care, ensuring a stable foundation for your addiction recovery journey.",
+      "The safest way to begin. Our medical team provides 24/7 supervised detox, managing withdrawal symptoms so you can stabilize comfortably and move forward with a clear foundation.",
   },
   {
     title: "Inpatient Treatment",
-    image: "/images/gallery/Amitiy-Behavioral-Health-house-outdoors.jpg",
+    image: "/images/gallery/inpatient-treatment-center.jpg",
     alt: "Inpatient Residential Treatment in Florida and California",
     description:
-      "An immersive, structured approach to care, laying the groundwork for successful recovery. Our team offers a blend of support and evidence-based therapies, setting the stage for a stable foundation after drug and alcohol detox.",
+      "Structured, immersive care that goes beyond stabilization. Evidence-based therapies, daily clinical support, and a community built around recovery — everything you need to build lasting change.",
   },
   {
     title: "Alumni Aftercare & Relapse Prevention",
-    image: "/images/gallery/Amity-Behavioral-Health-Alumni.jpg",
+    image: "/images/gallery/alumni.jpg",
     alt: "Alumni Aftercare & Relapse Prevention",
     description:
-      "Ongoing support beyond treatment, including regular check-ins and relapse-prevention strategies. Stay connected and maintain your recovery success long-term.",
+      "Recovery doesn\u2019t end at discharge. Regular check-ins, personalized relapse prevention planning, and an alumni network that keeps you connected — because long-term success needs long-term support.",
   },
 ];
 
@@ -31,7 +31,7 @@ export default function TreatmentCards() {
     <section className="bg-navy py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <h2 className="font-maistra text-3xl md:text-5xl text-white mb-12">
-          Addiction Rehab: Detox, Inpatient &amp; More
+          Full-Spectrum Addiction Treatment — From Detox to Long-Term Recovery
         </h2>
 
         <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory md:grid md:grid-cols-3 md:overflow-visible md:pb-0">

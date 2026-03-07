@@ -11,24 +11,46 @@ export default function InsuranceCoverage() {
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <span className="text-gold text-sm uppercase tracking-[0.2em] mb-4 block">
-          Coast to Coast Locations
+          Inpatient Treatment
         </span>
 
         {/* Row 1: Big title left, image right */}
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16">
           <div>
             <h2 className="font-maistra text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
-              Insurance-Covered Addiction Treatment
+              Medical Detox &amp; Residential Treatment
             </h2>
             <p className="text-white/75 text-xl leading-relaxed">
-              Our inpatient treatment centers specialize in immediate placement for individuals nationwide.
+              Our inpatient program is built for immediate placement — no waitlists, no runaround. If you're ready, we're ready.
             </p>
             <p className="text-white/75 text-xl leading-relaxed mt-4">
-              A wide range of critical recovery services, including acute medical detoxification and residential care.
+              From acute medical detox through full residential care, every level of treatment is under one roof.
             </p>
+            <div className="flex flex-nowrap gap-6 mt-8">
+              <div className="flex flex-col items-center gap-2 text-white/90">
+                <svg className="text-white shrink-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+                <span className="text-xs md:text-sm uppercase tracking-wider text-center">Immediate Placement</span>
+              </div>
+              <div className="flex flex-col items-center gap-2 text-white/90">
+                <svg className="text-white shrink-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                <span className="text-xs md:text-sm uppercase tracking-wider text-center">100% Confidential</span>
+              </div>
+              <div className="flex flex-col items-center gap-2 text-white/90">
+                <svg className="text-white shrink-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                <span className="text-xs md:text-sm uppercase tracking-wider text-center">Residential Care</span>
+              </div>
+            </div>
           </div>
           <Image
-            src="/images/gallery/amity-family.jpg"
+            src="/images/gallery/family.jpg"
             alt="Inpatient drug and alcohol detox"
             width={898}
             height={543}
@@ -42,22 +64,20 @@ export default function InsuranceCoverage() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
           <div>
             <span className="text-gold text-sm uppercase tracking-[0.2em] mb-4 block">
-              Insurance Coverage
+              Your Insurance, Maximized
             </span>
             <h3 className="font-maistra text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
-              We Work With All Major Insurers
+              Your PPO Plan Was Made for This
             </h3>
             <p className="text-white/75 text-lg leading-relaxed mb-8">
-              We prioritize accessible treatment with a streamlined intake
-              process, 24/7 nursing support, and a community-based setting
-              designed for rapid stabilization.
+              Most PPO plans cover the full cost of inpatient detox and residential treatment. We verify your benefits in minutes, handle the paperwork, and make sure you're using every dollar your plan allows — so you can focus on one thing.
             </p>
             <ul className="space-y-3 mb-10">
               {[
-                "24/7 Withdrawals Management",
-                "Multiple Locations",
-                "30, 60, or 90-Day Programs",
-                "Insurance May Cover up to 100%",
+                "24/7 Medical Withdrawal Management",
+                "Private Rooms, Single-Patient Focus",
+                "30, 60, or 90-Day Residential Programs",
+                "Most PPO Plans Covered Up to 100%",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-white text-lg">
                   <svg className="w-5 h-5 text-gold shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -88,7 +108,7 @@ export default function InsuranceCoverage() {
             </div>
           </div>
           <Image
-            src="/images/gallery/amity-group-therapy.jpg"
+            src="/images/gallery/group-therapy.jpg"
             alt="Relapse prevention program"
             width={600}
             height={400}

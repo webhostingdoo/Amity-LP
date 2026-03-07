@@ -41,15 +41,14 @@ export default function Hero() {
       {/* Hero content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 pt-28 sm:pt-36 md:pt-64 pb-16">
         <p className="text-sm md:text-base uppercase tracking-[0.2em] text-gold mb-4">
-          24/7 Medical Detox &amp; Residential Inpatient
+          Same Day Admission
         </p>
         <h1 className="font-maistra text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight max-w-2xl">
-          Top-rated Addiction Treatment
+          Dallas Medical Detox &amp; Rehab
         </h1>
         <hr className="border-t-2 border-white w-64 mt-8 mb-8" />
         <p className="text-2xl max-w-lg text-white/75 mb-10 leading-relaxed">
-          One call handles everything: free assessment, travel coordination,
-          and same-day admission. Available 24/7.
+          We accept most private PPO plans. Get a confidential 5-minute benefits check and find out if your treatment is 100% covered — private rooms available.
         </p>
 
         {/* CTA Buttons */}

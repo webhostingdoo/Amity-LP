@@ -5,7 +5,7 @@ import { useState } from "react";
 const processSteps = [
   {
     number: "01",
-    title: "Verify Insurance",
+    title: "See If You're 100% Covered",
     description:
       "We work with most major insurance providers. Our team handles the paperwork so you can focus on healing.",
     cta: "Check coverage now",
@@ -13,7 +13,7 @@ const processSteps = [
   },
   {
     number: "02",
-    title: "Speak with a Specialist",
+    title: "Talk to Someone Who Actually Knows",
     description:
       "Connect with a compassionate intake coordinator who will listen to your story and answer all your questions privately.",
     cta: "Call 866-971-7393",
@@ -21,7 +21,7 @@ const processSteps = [
   },
   {
     number: "03",
-    title: "Begin Your Recovery",
+    title: "Your First Day of Real Recovery",
     description:
       "Arrive at our facility where our clinical team has prepared a personalized treatment plan specifically for you.",
     cta: "View Admissions Info",
@@ -38,15 +38,14 @@ export default function Process() {
         {/* Left — Blockquote */}
         <div className="relative pl-8 border-l-2 border-white/20">
           <blockquote className="font-maistra italic font-normal text-white leading-tight mb-8" style={{fontSize: "3rem"}}>
-            &ldquo;We don&rsquo;t just treat symptoms; we build the
-            foundation for a life you actually want to live.&rdquo;
+            &ldquo;Texans take care of their own. We built Tru Dallas Detox so no one from this city has to leave home to get world-class treatment.&rdquo;
           </blockquote>
           <div>
             <strong className="text-white text-sm tracking-[0.2em] uppercase">
-              Patrick Santosuosso
+              John Doe
             </strong>
             <p className="text-white/60 text-xs tracking-[0.15em] uppercase mt-1">
-              CEO &amp; Co-Founder
+              CEO
             </p>
           </div>
         </div>

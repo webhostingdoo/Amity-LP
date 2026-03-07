@@ -3,12 +3,12 @@
 import Image from "next/image";
 
 const insuranceBullets = [
-  "Most PPO Insurance Accepted",
-  "Free Benefit Verification",
-  "Streamlined Admissions",
+  "Most PPO Plans Accepted",
+  "Free Benefits Verification",
+  "Streamlined Same-Day Admissions",
   "Individual Therapy",
-  "Co-Occurring Mental Health Disorders",
-  "Immediate Help Available",
+  "Co-Occurring Mental Health Treatment",
+  "Immediate Placement Available",
 ];
 
 export default function Accommodations() {
@@ -22,23 +22,18 @@ export default function Accommodations() {
         {/* Top heading + description */}
         <div className="max-w-3xl mb-16">
           <h2 className="font-maistra text-3xl md:text-5xl text-white mb-4">
-            Your Past Does Not Define Your Future!
+            Imagine Waking Up and Not Needing It Anymore
           </h2>
           <hr className="border-t-2 border-gold w-20 mb-6" />
           <p className="text-white/75 text-lg leading-relaxed">
-            The cycle of relapse can feel impossible to break on your own. We
-            bridge the gap between acute stabilization and long-term success.
-            <br />
-            Through intensive individual therapy and structured
-            accountability, we help you rediscover the person you were meant
-            to be before addiction took hold.
+            That life exists. It&rsquo;s being lived right now by people who once felt exactly the way you do. We bridge the distance between where you are today and a life free from addiction — with compassionate therapy, peer support, and clinical care that actually works.
           </p>
         </div>
 
         {/* Effective and Discreet — image + text */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <Image
-            src="/images/gallery/Amity-Surf-City-Living-area.jpg"
+            src="/images/gallery/therapy-1.jpg"
             alt="Effective and Discreet addiction treatment environment"
             width={960}
             height={640}
@@ -48,14 +43,10 @@ export default function Accommodations() {
           />
           <div>
             <h3 className="font-maistra text-2xl md:text-3xl text-white mb-6">
-              Effective and Discreet addiction treatment environment
+              Expert Care. Real Compassion. Zero Judgment.
             </h3>
             <p className="text-white/75 text-lg leading-relaxed mb-8">
-              Our accommodation options offer a discreet, comfortable space
-              to focus on overcoming drug and alcohol addiction. Surrounded by
-              supportive care and upscale amenities, you&rsquo;ll have the
-              privacy and tranquility needed to heal&mdash;physically,
-              emotionally, and mentally.
+              Our therapists don&rsquo;t just treat symptoms — they get to know you. In a private, calming environment surrounded by people on the same path, you&rsquo;ll find that recovery isn&rsquo;t something that happens to you. It&rsquo;s something you build, with the right team beside you.
             </p>
             <a
               href="tel:+18669717393"
@@ -71,7 +62,7 @@ export default function Accommodations() {
         {/* Second image */}
         <div className="mb-16">
           <Image
-            src="/images/gallery/SurfCity_House-1.jpg"
+            src="/images/gallery/therapy-2.jpg"
             alt="Rehabs that take insurance"
             width={960}
             height={640}
@@ -85,14 +76,10 @@ export default function Accommodations() {
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div>
             <h3 className="text-xl text-white mb-4">
-              Don&rsquo;t let financial uncertainty delay your recovery.
+              Know What You&rsquo;re Covered For — Before You Ever Walk In.
             </h3>
             <p className="text-white/75 leading-relaxed">
-              We work directly with most major insurance providers to
-              minimize your out-of-pocket costs. Our dedicated admissions
-              team handles all the paperwork, utilization reviews, and
-              benefit verifications so you can focus entirely on getting
-              better.
+              Most PPO plans cover more than people realize. We verify your benefits in minutes, fight for maximum coverage on your behalf, and handle every piece of paperwork — so cost is never the reason someone delays getting help.
             </p>
           </div>
           <ul className="space-y-3">

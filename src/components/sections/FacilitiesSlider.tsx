@@ -4,25 +4,25 @@ import Image from "next/image";
 
 const facilityCards = [
   {
-    name: "Tru Dallas Detox FL",
-    location: "Dallas TX",
-    image: "/images/gallery/amity-palm%20beach-slide.jpg",
+    name: "Tru Dallas Detox",
+    location: "Euless, TX",
+    image: "/images/gallery/tru-dallas-detox-slide.jpg",
     description:
-      "Our mission at Tru Dallas Detox is to empower individuals to achieve lasting recovery through addiction treatment in Dallas and providing personalized treatment plans tailored to each client\u2019s unique needs.",
+      "From medically supervised detox to full residential care and aftercare, Tru Dallas handles every stage of recovery under one roof. Personalized treatment plans, 24/7 clinical support, and same-day admission \u2014 built for people who are ready.",
   },
   {
-    name: "Tru Dallas Detox Huntington Beach CA",
-    location: "Huntington Beach, CA",
-    image: "/images/gallery/amity-3-slide.jpg",
+    name: "Maverick Behavioral Health",
+    location: "Euless, TX",
+    image: "/images/gallery/maverick-behavioral-health-slide.jpg",
     description:
-      "Located in the restorative coastal community of Huntington Beach, Tru Dallas Detox offers a calm, grounding atmosphere essential for early recovery. Our facility utilizes this serene setting to help patients disconnect from stress and focus entirely on their clinical treatment plan.",
+      "Maverick was built around a simple belief: bold, individualized care changes lives. Their programs combine 1-on-1 therapy, dual diagnosis treatment, and luxury accommodations \u2014 designed for clients who need focused, private care without compromise.",
   },
   {
-    name: "Tru Dallas Detox San Diego CA",
-    location: "San Diego, CA",
-    image: "/images/gallery/amity-2-slide.jpg",
+    name: "Oceans Luxury Rehab",
+    location: "San Clemente, CA",
+    image: "/images/gallery/oceans_luxury_rehab_slide.jpg",
     description:
-      "Tru Dallas Detox San Diego is a holistic, evidence-based drug and alcohol treatment center located in beautiful San Diego, California. We combine evidence-based practices with holistic therapies to address the physical, emotional, and spiritual aspects of addiction.",
+      "Nestled on the shores of Orange County, Oceans offers an oceanfront setting where discreet, upscale detox and residential treatment meet a genuinely calming environment for healing. Private accommodations, gourmet dining, and 24/7 medical care \u2014 recovery with no corners cut.",
   },
 ];
 
@@ -31,14 +31,11 @@ export default function FacilitiesSlider() {
     <section className="bg-navy py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <h2 className="font-maistra text-3xl md:text-5xl text-white mb-4">
-          A Glimpse Into Addiction Treatment Options
+          Where You Recover Matters
         </h2>
         <hr className="border-t-2 border-gold w-20 mb-6" />
         <p className="text-white/75 text-lg max-w-3xl leading-relaxed mb-12">
-          Explore some of our certified centers, each offering unique
-          programs and specialized care for lasting recovery. From serene
-          retreats to exclusive locations, we&rsquo;ll find the perfect fit
-          for your recovery journey.
+          Every facility in our network is hand-selected for clinical excellence, comfort, and proven outcomes. Whether you need medically supervised detox or full residential care, we&rsquo;ll match you to the right environment for your recovery.
         </p>
 
         {/* Cards — horizontal scroll on mobile, 3-col on desktop */}

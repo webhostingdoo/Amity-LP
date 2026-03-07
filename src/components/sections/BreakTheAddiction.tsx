@@ -28,7 +28,7 @@ const amenities = [
     )
   },
   {
-    label: "Beach Outings",
+    label: "Private Rooms",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M23 12a11.05 11.05 0 0 0-22 0zm-5 7a3 3 0 0 1-6 0v-7"/>
@@ -64,7 +64,7 @@ export default function BreakTheAddiction() {
         {/* Two-column: image left, text right */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <Image
-            src="/images/gallery/amity-2.jpg"
+            src="/images/gallery/tru-dallas-detox-reception.jpg"
             alt="Insurance covered detox and addiction treatment"
             width={800}
             height={600}
@@ -74,24 +74,20 @@ export default function BreakTheAddiction() {
           />
           <div>
             <span className="text-gold text-sm uppercase tracking-[0.2em] mb-4 block">
-              Our Expert Team Maximizes Your Insurance Benefits
+              We Handle the Hard Part
             </span>
             <h2 className="font-maistra text-3xl md:text-5xl text-white mb-6">
-              Break the Addiction, Not Your Bank!
+              One Call. We Take It From There.
             </h2>
             <p className="text-white/75 text-lg leading-relaxed mb-8">
-              We&rsquo;ve guided thousands on their path to recovery, not
-              only by finding them the best treatment for drug, alcohol, and
-              mental health disorders but also by expertly navigating their
-              insurance to minimize or eliminate out-of-pocket costs.
+              From verifying your insurance to coordinating your admission and medical intake — our team has done this thousands of times. You make the decision to get help. We handle everything else.
             </p>
           </div>
         </div>
 
         {/* Amenities subheading + list */}
         <h3 className="text-xl md:text-2xl text-white mb-8">
-          Our admissions team is here to discuss what&rsquo;s important to
-          you.
+          Everything you need for a smooth, supported start to recovery:
         </h3>
         <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
           {amenities.map((item) => (
@@ -108,11 +104,14 @@ export default function BreakTheAddiction() {
         <div className="quote-watermark" aria-hidden="true">&ldquo;</div>
         <div className="relative max-w-3xl mx-auto px-4 md:px-8 text-center">
           <blockquote className="quote-text">
-            &ldquo;Recovery is about building a life you want to live. We provide the <strong>dignity</strong>, <strong>privacy</strong>, and <strong>clinical excellence</strong> to bridge that gap.&rdquo;
+            &ldquo;The hardest part of recovery isn&rsquo;t{" "}
+            <strong>detox</strong>. It&rsquo;s the{" "}
+            <strong>Tuesday afternoon six months later</strong> when life gets hard. That&rsquo;s exactly what our{" "}
+            <strong>aftercare</strong> is built for.&rdquo;
           </blockquote>
           <div>
-            <div className="quote-name">Dr. Eric Chaghouri, MD</div>
-            <div className="quote-title">Medical Director</div>
+            <div className="quote-name">Jane Doe</div>
+            <div className="quote-title">Alumni Care</div>
           </div>
         </div>
       </div>
