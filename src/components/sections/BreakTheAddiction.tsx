@@ -53,7 +53,19 @@ const amenities = [
   }
 ];
 
-export default function BreakTheAddiction() {
+interface BreakTheAddictionProps {
+  eyebrow?: string;
+  h2?: string;
+  body?: string;
+}
+
+export default function BreakTheAddiction(props: BreakTheAddictionProps) {
+  const {
+    eyebrow = "We Handle the Hard Part",
+    h2 = "One Call. We Take It From There.",
+    body = "From verifying your insurance to coordinating your admission and medical intake \u2014 our team has done this thousands of times. You make the decision to get help. We handle everything else.",
+  } = props;
+
   return (
     <section
       id="amenities"
@@ -74,13 +86,13 @@ export default function BreakTheAddiction() {
           />
           <div>
             <span className="text-gold text-sm uppercase tracking-[0.2em] mb-4 block">
-              We Handle the Hard Part
+              {eyebrow}
             </span>
             <h2 className="font-maistra text-3xl md:text-5xl text-white mb-6">
-              One Call. We Take It From There.
+              {h2}
             </h2>
             <p className="text-white/75 text-lg leading-relaxed mb-8">
-              From verifying your insurance to coordinating your admission and medical intake — our team has done this thousands of times. You make the decision to get help. We handle everything else.
+              {body}
             </p>
           </div>
         </div>

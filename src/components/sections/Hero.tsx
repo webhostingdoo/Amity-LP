@@ -2,14 +2,30 @@
 
 import Image from "next/image";
 
-export default function Hero() {
+interface HeroProps {
+  supertitle?: string;
+  h1?: string;
+  paragraph?: string;
+  imageDesktop?: string;
+  imageMobile?: string;
+}
+
+export default function Hero(props: HeroProps) {
+  const {
+    supertitle = "SAME DAY ADMISSION",
+    h1 = "Dallas Medical Detox & Rehab",
+    paragraph = "We accept most private PPO plans. Get a confidential 5-minute benefits check and find out if your treatment is 100% covered — private rooms available.",
+    imageDesktop = "tdd-hero-desktop.jpg",
+    imageMobile = "tdd-hero-mobile.jpg",
+  } = props;
+
   return (
     <section className="relative min-h-[100svh] flex items-start">
       {/* Background image */}
       <div className="absolute inset-0 w-full h-full">
         {/* Mobile image - shown below 768px */}
         <Image
-          src="/images/hero/tdd-hero-mobile.jpg"
+          src={`/images/hero/${imageMobile}`}
           alt="True Dallas Detox treatment center"
           fill
           priority
@@ -19,7 +35,7 @@ export default function Hero() {
         />
         {/* Desktop image - shown at 768px and above */}
         <Image
-          src="/images/hero/tdd-hero-desktop.jpg"
+          src={`/images/hero/${imageDesktop}`}
           alt="True Dallas Detox treatment center"
           fill
           priority
@@ -41,15 +57,14 @@ export default function Hero() {
       {/* Hero content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 pt-28 sm:pt-36 md:pt-64 pb-16">
         <p className="text-sm md:text-base uppercase tracking-[0.2em] text-gold mb-4">
-          Same Day Admission
+          {supertitle}
         </p>
         <h1 className="font-maistra text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight max-w-2xl">
-          Dallas Medical Detox &amp; Rehab
+          {h1}
         </h1>
         <hr className="border-t-2 border-white w-64 mt-8 mb-8" />
         <p className="text-2xl text-white/75 mb-10 leading-relaxed max-w-xs sm:max-w-lg">
-          We accept most private PPO plans. Get a confidential 5-minute benefits check and find out if your treatment is 100% covered
-          {" "}<span className="block max-w-xs">— private rooms available.</span>
+          {paragraph}
         </p>
 
         {/* CTA Buttons */}

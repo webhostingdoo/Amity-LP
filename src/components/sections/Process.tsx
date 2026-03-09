@@ -29,7 +29,19 @@ const processSteps = [
   },
 ];
 
-export default function Process() {
+interface ProcessProps {
+  quote?: string;
+  author?: string;
+  authorTitle?: string;
+}
+
+export default function Process(props: ProcessProps) {
+  const {
+    quote = "\u201CTexans take care of their own. We built Tru Dallas Detox so no one from this city has to leave home to get world-class treatment.\u201D",
+    author = "Matt Hooten, LPC-S",
+    authorTitle = "Clinical Director",
+  } = props;
+
   const [activeStep, setActiveStep] = useState<number | null>(null);
 
   return (
@@ -38,14 +50,14 @@ export default function Process() {
         {/* Left — Blockquote */}
         <div className="relative pl-8 border-l-2 border-white/20">
           <blockquote className="font-maistra italic font-normal text-white leading-tight mb-8" style={{fontSize: "3rem"}}>
-            &ldquo;Texans take care of their own. We built Tru Dallas Detox so no one from this city has to leave home to get world-class treatment.&rdquo;
+            {quote}
           </blockquote>
           <div>
             <strong className="text-white text-sm tracking-[0.2em] uppercase">
-              Matt Hooten, LPC-S
+              {author}
             </strong>
             <p className="text-white/60 text-xs tracking-[0.15em] uppercase mt-1">
-              Clinical Director
+              {authorTitle}
             </p>
           </div>
         </div>

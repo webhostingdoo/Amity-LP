@@ -1,6 +1,16 @@
 "use client";
 
-export default function LeadForm() {
+interface LeadFormProps {
+  h2?: string;
+  body?: string;
+}
+
+export default function LeadForm(props: LeadFormProps) {
+  const {
+    h2 = "Find Out What You\u2019re Covered For \u2014 In Minutes",
+    body = "Fill out the form and one of our admissions coordinators will reach out to confirm your benefits and walk you through your options. Adding your insurance details helps us get you an answer faster.",
+  } = props;
+
   return (
     <section
       id="verify-form"
@@ -9,11 +19,11 @@ export default function LeadForm() {
     >
       <div className="max-w-3xl mx-auto px-4 md:px-8">
         <h2 className="font-maistra text-3xl md:text-5xl text-white mb-4 text-center">
-          Find Out What You&rsquo;re Covered For — In Minutes
+          {h2}
         </h2>
         <hr className="border-t-2 border-gold w-20 mx-auto mb-6" />
         <p className="text-white/75 text-lg leading-relaxed text-center mb-12">
-          Fill out the form and one of our admissions coordinators will reach out to confirm your benefits and walk you through your options. Adding your insurance details helps us get you an answer faster.
+          {body}
         </p>
 
         <form

@@ -2,7 +2,27 @@
 
 import Image from "next/image";
 
-export default function InsuranceCoverage() {
+interface InsuranceCoverageProps {
+  eyebrow?: string;
+  h2?: string;
+  bodyP1?: string;
+  bodyP2?: string;
+  eyebrow2?: string;
+  h2_2?: string;
+  body2?: string;
+}
+
+export default function InsuranceCoverage(props: InsuranceCoverageProps) {
+  const {
+    eyebrow = "Inpatient Treatment",
+    h2 = "Medical Detox & Residential Treatment",
+    bodyP1 = "Our inpatient program is built for immediate placement \u2014 no waitlists, no runaround. If you\u2019re ready, we\u2019re ready.",
+    bodyP2 = "From acute medical detox through full residential care, every level of treatment is under one roof.",
+    eyebrow2 = "Your Insurance, Maximized",
+    h2_2 = "Your PPO Plan Was Made for This",
+    body2 = "Most PPO plans cover the full cost of inpatient detox and residential treatment. We verify your benefits in minutes, handle the paperwork, and make sure you\u2019re using every dollar your plan allows \u2014 so you can focus on one thing.",
+  } = props;
+
   return (
     <section
       id="addiction-treatment"
@@ -11,20 +31,20 @@ export default function InsuranceCoverage() {
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <span className="text-gold text-sm uppercase tracking-[0.2em] mb-4 block">
-          Inpatient Treatment
+          {eyebrow}
         </span>
 
         {/* Row 1: Big title left, image right */}
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-16">
           <div>
             <h2 className="font-maistra text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
-              Medical Detox &amp; Residential Treatment
+              {h2}
             </h2>
             <p className="text-white/75 text-xl leading-relaxed">
-              Our inpatient program is built for immediate placement — no waitlists, no runaround. If you&apos;re ready, we&apos;re ready.
+              {bodyP1}
             </p>
             <p className="text-white/75 text-xl leading-relaxed mt-4">
-              From acute medical detox through full residential care, every level of treatment is under one roof.
+              {bodyP2}
             </p>
             <div className="flex flex-nowrap gap-6 mt-8">
               <div className="flex flex-col items-center gap-2 text-white/90">
@@ -64,13 +84,13 @@ export default function InsuranceCoverage() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
           <div>
             <span className="text-gold text-sm uppercase tracking-[0.2em] mb-4 block">
-              Your Insurance, Maximized
+              {eyebrow2}
             </span>
             <h3 className="font-maistra text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
-              Your PPO Plan Was Made for This
+              {h2_2}
             </h3>
             <p className="text-white/75 text-lg leading-relaxed mb-8">
-              Most PPO plans cover the full cost of inpatient detox and residential treatment. We verify your benefits in minutes, handle the paperwork, and make sure you&apos;re using every dollar your plan allows — so you can focus on one thing.
+              {body2}
             </p>
             <ul className="space-y-3 mb-10">
               {[

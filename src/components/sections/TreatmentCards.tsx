@@ -2,36 +2,53 @@
 
 import Image from "next/image";
 
-const treatmentCards = [
-  {
-    title: "Medical Drug & Alcohol Detox",
-    image: "/images/gallery/drug-and-alcohol-detox.jpg",
-    alt: "Drug and Alcohol Detox - Dallas, TX",
-    description:
-      "The safest way to begin. Our medical team provides 24/7 supervised detox, managing withdrawal symptoms so you can stabilize comfortably and move forward with a clear foundation.",
-  },
-  {
-    title: "Inpatient Treatment",
-    image: "/images/gallery/inpatient-treatment-center.jpg",
-    alt: "Inpatient Residential Treatment in Florida and California",
-    description:
-      "Structured, immersive care that goes beyond stabilization. Evidence-based therapies, daily clinical support, and a community built around recovery — everything you need to build lasting change.",
-  },
-  {
-    title: "Alumni Aftercare & Relapse Prevention",
-    image: "/images/gallery/alumni.jpg",
-    alt: "Alumni Aftercare & Relapse Prevention",
-    description:
-      "Recovery doesn\u2019t end at discharge. Regular check-ins, personalized relapse prevention planning, and an alumni network that keeps you connected — because long-term success needs long-term support.",
-  },
-];
+interface TreatmentCardsProps {
+  h2?: string;
+  card1Title?: string;
+  card1Body?: string;
+  card2Title?: string;
+  card2Body?: string;
+  card3Title?: string;
+  card3Body?: string;
+}
 
-export default function TreatmentCards() {
+export default function TreatmentCards(props: TreatmentCardsProps) {
+  const {
+    h2 = "Full-Spectrum Addiction Treatment \u2014 From Detox to Long-Term Recovery",
+    card1Title = "Medical Drug & Alcohol Detox",
+    card1Body = "The safest way to begin. Our medical team provides 24/7 supervised detox, managing withdrawal symptoms so you can stabilize comfortably and move forward with a clear foundation.",
+    card2Title = "Inpatient Treatment",
+    card2Body = "Structured, immersive care that goes beyond stabilization. Evidence-based therapies, daily clinical support, and a community built around recovery \u2014 everything you need to build lasting change.",
+    card3Title = "Alumni Aftercare & Relapse Prevention",
+    card3Body = "Recovery doesn\u2019t end at discharge. Regular check-ins, personalized relapse prevention planning, and an alumni network that keeps you connected \u2014 because long-term success needs long-term support.",
+  } = props;
+
+  const treatmentCards = [
+    {
+      title: card1Title,
+      image: "/images/gallery/drug-and-alcohol-detox.jpg",
+      alt: "Drug and Alcohol Detox - Dallas, TX",
+      description: card1Body,
+    },
+    {
+      title: card2Title,
+      image: "/images/gallery/inpatient-treatment-center.jpg",
+      alt: "Inpatient Residential Treatment in Florida and California",
+      description: card2Body,
+    },
+    {
+      title: card3Title,
+      image: "/images/gallery/alumni.jpg",
+      alt: "Alumni Aftercare & Relapse Prevention",
+      description: card3Body,
+    },
+  ];
+
   return (
     <section className="bg-navy py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <h2 className="font-maistra text-3xl md:text-5xl text-white mb-12">
-          Full-Spectrum Addiction Treatment — From Detox to Long-Term Recovery
+          {h2}
         </h2>
 
         <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory md:grid md:grid-cols-3 md:overflow-visible md:pb-0">
