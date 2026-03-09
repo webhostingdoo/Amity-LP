@@ -65,7 +65,7 @@ export default function Hero() {
             </span>
           </a>
           <a
-            href="#verify-form"
+            href="/verify-insurance"
             className="inline-block px-8 py-4 text-center font-semibold rounded border-2 border-white text-white hover:bg-white/10 transition"
           >
             <span className="text-xl uppercase">VERIFY YOUR BENEFITS</span>

@@ -58,7 +58,7 @@ export default function TreatmentCards() {
                   {card.description}
                 </p>
                 <a
-                  href="#verify-form"
+                  href="/verify-insurance"
                   className="inline-block text-center px-6 py-3 rounded border border-white/30 text-white text-sm font-semibold hover:bg-white/10 transition"
                 >
                   Verify Insurance

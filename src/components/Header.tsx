@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -33,7 +34,7 @@ export default function Header() {
       >
         {/* Top bar */}
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 lg:px-8 py-5">
-          <a href="#" className="shrink-0">
+          <Link href="/" className="shrink-0">
             <Image
               src="/images/logos/tru_dallas_logo_nav.svg"
               alt="Tru Dallas Detox"
@@ -42,7 +43,7 @@ export default function Header() {
               priority
               className="w-28 h-auto"
             />
-          </a>
+          </Link>
 
           {/* Logo + title group */}
           <div className="hidden lg:flex items-center gap-4 ml-4">

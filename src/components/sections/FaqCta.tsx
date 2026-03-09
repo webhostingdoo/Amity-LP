@@ -19,7 +19,7 @@ export default function FaqCta() {
             <span className="text-xl font-bold">(866) 971-7393</span>
           </a>
           <a
-            href="/#verify-form"
+            href="/verify-insurance"
             className="inline-block px-8 py-4 text-center font-semibold rounded border-2 border-white text-white hover:bg-white/10 transition"
           >
             <span className="text-sm uppercase tracking-widest">Quick &amp; Confidential</span>
