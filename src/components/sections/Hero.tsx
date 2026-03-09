@@ -47,8 +47,9 @@ export default function Hero() {
           Dallas Medical Detox &amp; Rehab
         </h1>
         <hr className="border-t-2 border-white w-64 mt-8 mb-8" />
-        <p className="text-2xl max-w-lg text-white/75 mb-10 leading-relaxed">
-          We accept most private PPO plans. Get a confidential 5-minute benefits check and find out if your treatment is 100% covered — private rooms available.
+        <p className="text-2xl text-white/75 mb-10 leading-relaxed max-w-xs sm:max-w-lg">
+          We accept most private PPO plans. Get a confidential 5-minute benefits check and find out if your treatment is 100% covered
+          {" "}<span className="block max-w-xs">— private rooms available.</span>
         </p>
 
         {/* CTA Buttons */}

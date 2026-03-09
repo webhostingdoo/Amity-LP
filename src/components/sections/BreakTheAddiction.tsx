@@ -110,8 +110,8 @@ export default function BreakTheAddiction() {
             <strong>aftercare</strong> is built for.&rdquo;
           </blockquote>
           <div>
-            <div className="quote-name">Jane Doe</div>
-            <div className="quote-title">Alumni Care</div>
+            <div className="quote-name">James Saunders</div>
+            <div className="quote-title">Program Director</div>
           </div>
         </div>
       </div>

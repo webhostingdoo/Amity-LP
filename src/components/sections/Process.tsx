@@ -42,10 +42,10 @@ export default function Process() {
           </blockquote>
           <div>
             <strong className="text-white text-sm tracking-[0.2em] uppercase">
-              John Doe
+              Matt Hooten, LPC-S
             </strong>
             <p className="text-white/60 text-xs tracking-[0.15em] uppercase mt-1">
-              CEO
+              Clinical Director
             </p>
           </div>
         </div>

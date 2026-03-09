@@ -25,8 +25,9 @@ export default function Footer() {
             </svg>
             <div>
               <p className="text-white font-semibold text-sm">Tru Dallas Detox</p>
-              <p className="text-white/60 text-sm">2245 Midway Rd, Suite 160</p>
-              <p className="text-white/60 text-sm">Euless, TX 76039</p>
+              <p className="text-white/60 text-sm">2219 West Euless Blvd Suite 200</p>
+              <p className="text-white/60 text-sm">Euless, TX 76040</p>
+              <p className="text-white/60 text-sm">United States</p>
             </div>
           </a>
         </div>

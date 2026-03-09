@@ -11,7 +11,7 @@ export default function TestimonialQuote() {
           <strong>change that</strong>.&rdquo;
         </blockquote>
         <div>
-          <div className="quote-name">John Doe, MD</div>
+          <div className="quote-name">Mitchell Naficy, MD</div>
           <div className="quote-title">Medical Director</div>
         </div>
       </div>
