@@ -1,4 +1,3 @@
-import { Suspense } from 'react';
 import VerifyHero from "@/components/sections/VerifyHero";
 import VerifyForm from "@/components/sections/VerifyForm";
 import FaqCta from "@/components/sections/FaqCta";
@@ -12,9 +11,7 @@ export default function VerifyInsurancePage() {
   return (
     <main>
       <VerifyHero />
-      <Suspense fallback={null}>
-        <VerifyForm />
-      </Suspense>
+      <VerifyForm />
       <FaqCta />
     </main>
   );

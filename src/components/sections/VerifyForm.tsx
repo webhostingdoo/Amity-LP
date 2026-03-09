@@ -1,22 +1,14 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useSearchParams } from 'next/navigation';
 
 export default function VerifyForm() {
-  const searchParams = useSearchParams();
   const [gclid, setGclid] = useState('');
 
   useEffect(() => {
-    const urlGclid = searchParams.get('gclid');
-    if (urlGclid) {
-      sessionStorage.setItem('gclid', urlGclid);
-      setGclid(urlGclid);
-    } else {
-      const stored = sessionStorage.getItem('gclid');
-      if (stored) setGclid(stored);
-    }
-  }, [searchParams]);
+    const stored = sessionStorage.getItem('gclid');
+    if (stored) setGclid(stored);
+  }, []);
 
   const inputClass = "w-full bg-white/5 border border-white/20 rounded px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:border-gold";
   const labelClass = "block text-white/60 text-sm mb-1";

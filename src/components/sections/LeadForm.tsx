@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useSearchParams } from 'next/navigation';
 
 interface LeadFormProps {
   h2?: string;
@@ -14,19 +13,12 @@ export default function LeadForm(props: LeadFormProps) {
     body = "Fill out the form and one of our admissions coordinators will reach out to confirm your benefits and walk you through your options. Adding your insurance details helps us get you an answer faster.",
   } = props;
 
-  const searchParams = useSearchParams();
   const [gclid, setGclid] = useState('');
 
   useEffect(() => {
-    const urlGclid = searchParams.get('gclid');
-    if (urlGclid) {
-      sessionStorage.setItem('gclid', urlGclid);
-      setGclid(urlGclid);
-    } else {
-      const stored = sessionStorage.getItem('gclid');
-      if (stored) setGclid(stored);
-    }
-  }, [searchParams]);
+    const stored = sessionStorage.getItem('gclid');
+    if (stored) setGclid(stored);
+  }, []);
 
   return (
     <section

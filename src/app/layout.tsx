@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Montserrat } from "next/font/google";
 import Script from 'next/script';
+import { Suspense } from 'react';
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GclidCapture from '@/components/GclidCapture';
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -56,6 +58,9 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${cormorant.variable} ${montserrat.variable}`}>
+        <Suspense fallback={null}>
+          <GclidCapture />
+        </Suspense>
         <Header />
         <main>{children}</main>
         <Footer />

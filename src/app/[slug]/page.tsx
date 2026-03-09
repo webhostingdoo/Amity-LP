@@ -1,4 +1,3 @@
-import { Suspense } from 'react';
 import { notFound } from "next/navigation";
 import treatments from "@/data/treatments.json";
 import Hero from "@/components/sections/Hero";
@@ -66,12 +65,10 @@ export default function TreatmentPage({ params }: { params: { slug: string } }) 
         card3Body={t.treatment_card3_body}
       />
       <InsuranceLogos />
-      <Suspense fallback={null}>
-        <LeadForm
-          h2={t.form_h2}
-          body={t.form_body}
-        />
-      </Suspense>
+      <LeadForm
+        h2={t.form_h2}
+        body={t.form_body}
+      />
     </main>
   );
 }
