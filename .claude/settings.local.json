@@ -7,7 +7,8 @@
       "Bash(tail:*)",
       "Bash(netstat:*)",
       "Bash(taskkill:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(npm i:*)"
     ]
   }
 }
