@@ -14,7 +14,10 @@
       "Bash(git remote:*)",
       "Bash(git push:*)",
       "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('O:/LP-Template/src/data/site-config.json','utf8'\\)\\); console.log\\('Valid JSON'\\)\")",
-      "Bash(cd O:/LP-Template && npx tsc --noEmit --pretty 2>&1 | head -20)"
+      "Bash(cd O:/LP-Template && npx tsc --noEmit --pretty 2>&1 | head -20)",
+      "Bash(cd O:/LP-Template && mv public/images/logos/tru_dallas_logo_nav.svg public/images/logos/logo.png && mv public/images/logos/tru_dallas_logo_white.svg public/images/logos/logo-white.png && mv public/images/insurance/bluecross-blueshield.png public/images/insurance/bcbs.png && echo \"Renames done\")",
+      "Bash(cd O:/LP-Template && mv src/data/treatments.json src/data/pages.json && rm public/images/hero/tdd-hero-4k.jpg && echo \"Done\")",
+      "Bash(cd O:/LP-Template && mv public/images/hero/tdd-hero-desktop.jpg public/images/hero/hero-desktop.jpg && mv public/images/hero/tdd-hero-mobile.jpg public/images/hero/hero-mobile.jpg && echo \"Renames done\")"
     ]
   }
 }

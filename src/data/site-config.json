@@ -5,7 +5,11 @@
     "phoneRaw": "+18886640182",
     "email": "info@amitypb.com",
     "address": "2901 Broadway, West Palm Beach, FL 33407",
-    "mapsUrl": "https://maps.google.com/?q=2901+Broadway+West+Palm+Beach+FL+33407"
+    "mapsUrl": "https://maps.google.com/?q=2901+Broadway+West+Palm+Beach+FL+33407",
+    "state": "FL",
+    "stateFullName": "Florida",
+    "domain": "https://admissions.amitypb.com",
+    "legalName": "PLACEHOLDER LEGAL ENTITY NAME"
   },
   "colors": {
     "primary": "#0e2a47",
@@ -21,6 +25,7 @@
     "footer": "amity-logo-white.png"
   },
   "hero": {
+    "h1": "Medical Detox & Residential Treatment",
     "imageDesktop": "hero-desktop.jpg",
     "imageMobile": "hero-mobile.jpg"
   },
@@ -148,19 +153,19 @@
       "name": "Amity Palm Beach",
       "location": "West Palm Beach, FL",
       "description": "Medically supervised detox and residential treatment in a peaceful coastal setting. Joint Commission accredited with 24/7 clinical oversight.",
-      "image": "tru-dallas-detox-slide.jpg"
+      "image": "slider-1.jpg"
     },
     {
       "name": "Partner Facility",
       "location": "South Florida",
       "description": "We partner with leading treatment centers to ensure continuity of care at every level of recovery.",
-      "image": "maverick-behavioral-health-slide.jpg"
+      "image": "slider-2.jpg"
     },
     {
       "name": "Partner Facility",
       "location": "Nationwide",
       "description": "From detox to long-term residential care, our network ensures you receive the right level of support wherever you are.",
-      "image": "oceans_luxury_rehab_slide.jpg"
+      "image": "slider-3.jpg"
     }
   ],
   "footer": {
@@ -187,6 +192,6 @@
     "eyebrow": "One Call Changes Everything",
     "heading": "You Don't Have to Figure This Out Alone",
     "body": "Addiction is isolating. Recovery doesn't have to be. Our admissions team is available 24/7 — no judgment, no pressure, just honest answers about your options and what treatment looks like at Amity Palm Beach.",
-    "image": "break-the-addiction.jpg"
+    "image": "break-image.jpg"
   }
 }
