@@ -4,23 +4,14 @@ import Image from "next/image";
 import config from '@/data/site-config.json';
 
 export default function Footer() {
-  const certs = config.footer.certifications;
-
   return (
     <footer className="bg-primary border-t border-white/10 py-12">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Top row: Logo + Address */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-10">
-          {/* Left: Logo + certifications */}
+          {/* Left: Logo */}
           <div>
             <Image src={`/images/logos/${config.logos.footer}`} alt={config.brand.name} width={250} height={50} quality={80} className="w-[200px] h-auto mb-6" />
-            {certs[0] && <p className="text-white/50 text-sm mb-2">{certs[0]}</p>}
-            {certs[1] && <p className="text-white/75 text-sm mb-1">{certs[1]}</p>}
-            {certs[2] && <p className="text-white/75 text-sm mb-4">{certs[2]}</p>}
-            <p className="text-white/50 text-sm">
-              {certs[3] && <span className="text-accent">{certs[3]}</span>}
-              {certs[4] && <> · {certs[4]}</>}
-            </p>
           </div>
           {/* Right: Address */}
           <a href={config.brand.mapsUrl || "#"} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 hover:opacity-80 transition">
@@ -36,11 +27,15 @@ export default function Footer() {
 
         {/* Certification seals */}
         <div className="flex items-center gap-6 mb-10">
-          <Image src="/images/logos/jointcommission.webp" alt="Joint Commission Accredited" width={100} height={100} className="h-16 w-auto opacity-90" />
-          <a href="https://www.legitscript.com/websites/?checker_keywords=dallasdetox.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/images/logos/45265114.png" alt="LegitScript Certified" width={100} height={100} className="h-16 w-auto opacity-90 hover:opacity-100 transition" />
-          </a>
-          <Image src="/images/logos/tx-dshs-logo-vertical_white.png" alt="Texas Department of State Health Services" width={100} height={100} className="h-16 w-auto opacity-90" />
+          {config.footer.certificationSeals.map((seal) =>
+            seal.href ? (
+              <a key={seal.src} href={seal.href} target="_blank" rel="noopener noreferrer">
+                <Image src={`/images/logos/${seal.src}`} alt={seal.alt} width={seal.width} height={seal.height} className="h-16 w-auto opacity-90 hover:opacity-100 transition" />
+              </a>
+            ) : (
+              <Image key={seal.src} src={`/images/logos/${seal.src}`} alt={seal.alt} width={seal.width} height={seal.height} className="h-16 w-auto opacity-90" />
+            )
+          )}
         </div>
 
         {/* Divider */}

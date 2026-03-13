@@ -1,11 +1,11 @@
 {
   "brand": {
-    "name": "Tru Dallas Detox",
-    "phone": "(866) 971-7393",
-    "phoneRaw": "+18669717393",
-    "email": "info@dallasdetox.com",
-    "address": "2219 West Euless Blvd Suite 200, Euless, TX 76040, United States",
-    "mapsUrl": ""
+    "name": "Amity Palm Beach",
+    "phone": "(888) 664-0182",
+    "phoneRaw": "+18886640182",
+    "email": "info@amitypb.com",
+    "address": "2901 Broadway, West Palm Beach, FL 33407",
+    "mapsUrl": "https://maps.google.com/?q=2901+Broadway+West+Palm+Beach+FL+33407"
   },
   "colors": {
     "primary": "#0e2a47",
@@ -13,41 +13,64 @@
     "accent": "#D4AF37"
   },
   "fonts": {
-    "heading": "Cormorant Garamond",
-    "body": "Montserrat"
+    "heading": "MaistraDisplay",
+    "body": "TyponineSansPro"
   },
   "logos": {
-    "nav": "tru_dallas_logo_nav.svg",
-    "footer": "tru_dallas_logo_white.svg"
+    "nav": "amity-logo-nav.png",
+    "footer": "amity-logo-white.png"
+  },
+  "hero": {
+    "imageDesktop": "hero-desktop.jpg",
+    "imageMobile": "hero-mobile.jpg"
   },
   "social": {
     "facebook": "",
     "youtube": ""
   },
   "tracking": {
-    "googleAdsId": "AW-17709217731",
-    "ctmScriptUrl": "https://305685.tctm.co/t.js",
+    "googleAdsId": "AW-PLACEHOLDER",
+    "ctmScriptUrl": "PLACEHOLDER_CTM_SCRIPT",
     "ga4Id": ""
   },
   "salesforce": {
-    "oid": "00DDn00000CYDfk",
-    "actionUrl": "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DDn00000CYDfk",
-    "retUrl": "https://admissions.dallasdetox.com/",
-    "leadSource": "Tru Dallas Detox",
-    "gclidFieldId": "00NDn00000bssdB"
+    "oid": "PLACEHOLDER_OID",
+    "actionUrl": "https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=PLACEHOLDER_OID",
+    "retUrl": "https://admissions.BRANDSLUG.com/thank-you",
+    "leadSource": "Amity Palm Beach",
+    "gclidFieldId": "PLACEHOLDER_GCLID_FIELD"
   },
   "meta": {
-    "defaultTitle": "Tru Dallas Detox | Medical Detox & Addiction Treatment Dallas TX",
-    "defaultDescription": "Medical detox and addiction treatment in Dallas TX. Most PPO plans accepted. Same-day admission available."
+    "defaultTitle": "Amity Palm Beach | Medical Detox & Addiction Treatment West Palm Beach FL",
+    "defaultDescription": "Medical detox and addiction treatment in West Palm Beach FL. Most PPO plans accepted. Same-day admission available.",
+    "domain": "https://admissions.amitypb.com"
   },
   "nav": {
     "links": [
-      { "label": "Home", "href": "/" },
-      { "label": "Detox", "href": "/#addiction-treatment" },
-      { "label": "FAQ", "href": "/faq" },
-      { "label": "Our Facilities", "href": "/#our-facilities" },
-      { "label": "Verify Insurance", "href": "/verify-insurance" },
-      { "label": "Contact", "href": "/contact" }
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Detox",
+        "href": "/#addiction-treatment"
+      },
+      {
+        "label": "FAQ",
+        "href": "/faq"
+      },
+      {
+        "label": "Our Facilities",
+        "href": "/#our-facilities"
+      },
+      {
+        "label": "Verify Insurance",
+        "href": "/verify-insurance"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
     ]
   },
   "trustBadges": [
@@ -87,60 +110,83 @@
     "FMLA Assistance"
   ],
   "process": {
-    "quote": "\"The fear of withdrawal keeps more people sick than withdrawal itself ever could. We built our detox protocol specifically to change that.\"",
-    "author": "Matt Hooten, LPC-S",
+    "quote": "The hardest part of asking for help is making the first call. Everything after that — we handle. Our job is to make recovery feel possible from day one.",
+    "author": "Jane Doe, LMHC",
     "authorTitle": "Clinical Director"
   },
   "testimonial": {
-    "quote": "\u201CThe fear of withdrawal keeps more people sick than withdrawal itself ever could. We built our detox protocol specifically to change that.\u201D",
-    "author": "Mitchell Naficy, MD",
+    "quote": "Detox is not just about getting through withdrawal safely. It's about building enough trust in those first days that a person believes recovery is worth fighting for. That's what we build here.",
+    "author": "Jane Doe 1",
     "role": "Medical Director"
   },
   "insuranceLogos": {
     "heading": "Your Insurance Is Probably Already on This List",
-    "body": "Most PPO plans cover the full cost of treatment \u2014 and we\u2019ll confirm yours in minutes. Check your provider below, or call us and we\u2019ll walk you through exactly what you\u2019re covered for, at no cost and with no obligation.",
+    "body": "Most PPO plans cover the full cost of detox and residential treatment. Our admissions team verifies your benefits within minutes — no commitment required.",
     "providers": [
-      "Aetna", "BCBS Texas", "Cigna", "UnitedHealthcare",
-      "Anthem", "UMR", "GEHA", "Humana"
+      "Aetna",
+      "BCBS Florida",
+      "Cigna",
+      "UnitedHealthcare",
+      "Anthem",
+      "UMR",
+      "GEHA"
     ]
   },
   "accommodations": {
-    "heading1": "Imagine Waking Up and Not Needing It Anymore",
-    "body1": "That life exists. It\u2019s being lived right now by people who once felt exactly the way you do. We bridge the distance between where you are today and a life free from addiction \u2014 with compassionate therapy, peer support, and clinical care that actually works.",
-    "heading2": "Expert Care. Real Compassion. Zero Judgment.",
-    "body2": "Our therapists don\u2019t just treat symptoms \u2014 they get to know you. In a private, calming environment surrounded by people on the same path, you\u2019ll find that recovery isn\u2019t something that happens to you. It\u2019s something you build, with the right team beside you.",
+    "heading1": "Imagine Waking Up Free",
+    "body1": "That life is closer than you think. At Amity Palm Beach, mornings start with clarity — not cravings. Our West Palm Beach facility is designed to make the early days of recovery feel safe, supported, and genuinely hopeful.",
+    "heading2": "Clinical Excellence. Real Compassion. Zero Judgment.",
+    "body2": "Our therapists don't just treat symptoms — they treat people. Every client receives an individualized plan built around their history, their goals, and their pace. Dual diagnosis, trauma-informed care, and holistic therapies are available from day one.",
     "ctaText": "Verify Your Insurance",
-    "images": ["therapy-1.jpg", "therapy-2.jpg"]
+    "images": [
+      "therapy-1.jpg",
+      "therapy-2.jpg"
+    ]
   },
   "facilities": [
     {
-      "name": "Tru Dallas Detox",
-      "location": "Euless, TX",
-      "description": "From medically supervised detox to full residential care and aftercare, Tru Dallas handles every stage of recovery under one roof. Personalized treatment plans, 24/7 clinical support, and same-day admission \u2014 built for people who are ready.",
+      "name": "Amity Palm Beach",
+      "location": "West Palm Beach, FL",
+      "description": "Medically supervised detox and residential treatment in a peaceful coastal setting. Joint Commission accredited with 24/7 clinical oversight.",
       "image": "tru-dallas-detox-slide.jpg"
     },
     {
-      "name": "Maverick Behavioral Health",
-      "location": "DFW Area, TX",
-      "description": "Maverick was built around a simple belief: bold, individualized care changes lives. Their programs combine 1-on-1 therapy, dual diagnosis treatment, and luxury accommodations \u2014 designed for clients who need focused, private care without compromise.",
+      "name": "Partner Facility",
+      "location": "South Florida",
+      "description": "We partner with leading treatment centers to ensure continuity of care at every level of recovery.",
       "image": "maverick-behavioral-health-slide.jpg"
     },
     {
-      "name": "Oceans Luxury Rehab",
-      "location": "South Florida",
-      "description": "Nestled on the shores of Orange County, Oceans offers an oceanfront setting where discreet, upscale detox and residential treatment meet a genuinely calming environment for healing. Private accommodations, gourmet dining, and 24/7 medical care \u2014 recovery with no corners cut.",
+      "name": "Partner Facility",
+      "location": "Nationwide",
+      "description": "From detox to long-term residential care, our network ensures you receive the right level of support wherever you are.",
       "image": "oceans_luxury_rehab_slide.jpg"
     }
   ],
   "footer": {
-    "certifications": [
-      "Licensed and Certified by:",
-      "The Joint Commission Accredited",
-      "LegitScript Certified",
-      "Adults 18+",
-      "All Major Insurance Accepted"
+    "certificationSeals": [
+      {
+        "src": "jointcommission.webp",
+        "alt": "Joint Commission Accredited",
+        "href": null,
+        "width": 100,
+        "height": 100
+      },
+      {
+        "src": "45265114.png",
+        "alt": "LegitScript Certified",
+        "href": "https://legitscript.com/pharmacy/admissions.amitypb.com",
+        "width": 100,
+        "height": 100
+      }
     ],
     "legalLinkText": "Privacy Policy & HIPAA Notice",
     "legalLinkUrl": "/privacy-policy"
+  },
+  "breakTheAddiction": {
+    "eyebrow": "One Call Changes Everything",
+    "heading": "You Don't Have to Figure This Out Alone",
+    "body": "Addiction is isolating. Recovery doesn't have to be. Our admissions team is available 24/7 — no judgment, no pressure, just honest answers about your options and what treatment looks like at Amity Palm Beach.",
+    "image": "break-the-addiction.jpg"
   }
 }

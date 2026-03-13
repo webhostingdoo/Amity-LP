@@ -5,22 +5,22 @@ export default function PrivacyContent() {
         <div className="max-w-3xl prose-privacy">
 
           <p className="text-white/60 text-sm mb-12 leading-relaxed">
-            <strong className="text-white/80">Entity:</strong> Tru Dallas Detox &amp; Recovery Center &nbsp;&bull;&nbsp;
-            <strong className="text-white/80">Website:</strong> dallasdetox.com &nbsp;&bull;&nbsp;
-            <strong className="text-white/80">Email:</strong> info@dallasdetox.com &nbsp;&bull;&nbsp;
-            <strong className="text-white/80">Address:</strong> 2219 W Euless Blvd Suite #200, Euless, TX 76040
+            <strong className="text-white/80">Entity:</strong> Amity Palm Beach &nbsp;&bull;&nbsp;
+            <strong className="text-white/80">Website:</strong> admissions.amitypb.com &nbsp;&bull;&nbsp;
+            <strong className="text-white/80">Email:</strong> info@amitypb.com &nbsp;&bull;&nbsp;
+            <strong className="text-white/80">Address:</strong> 2901 Broadway, West Palm Beach, FL 33407
           </p>
 
           {[
             {
               title: "1) Who We Are",
-              content: "Tru Dallas Detox (\u201CTru Dallas,\u201D \u201Cwe,\u201D \u201Cour,\u201D \u201Cus\u201D) is a Texas-licensed behavioral health provider. Protecting your privacy\u2014and especially your health information\u2014is a core obligation. This combined policy governs how we collect, use, disclose, and protect general website data and Protected Health Information (\u201CPHI\u201D). It consolidates all unique provisions from our HIPAA Policy, our Website Privacy Policy, and our internal Notice contained in our compliance binder.",
+              content: "Amity Palm Beach (\u201CAmity,\u201D \u201Cwe,\u201D \u201Cour,\u201D \u201Cus\u201D) is a Florida-licensed behavioral health provider. Protecting your privacy\u2014and especially your health information\u2014is a core obligation. This combined policy governs how we collect, use, disclose, and protect general website data and Protected Health Information (\u201CPHI\u201D). It consolidates all unique provisions from our HIPAA Policy, our Website Privacy Policy, and our internal Notice contained in our compliance binder.",
             },
             {
               title: "2) Scope & Applicability",
               content: null,
               bullets: [
-                "Website & Digital Services: Applies to information collected through dallasdetox.com (forms, chat, analytics, and embedded content).",
+                "Website & Digital Services: Applies to information collected through admissions.amitypb.com (forms, chat, analytics, and embedded content).",
                 "Patients & PHI: Applies to PHI we create or receive in connection with treatment, payment, and healthcare operations.",
                 "Substance Use Disorder Records: In addition to HIPAA, certain substance use disorder treatment records are protected by 42 C.F.R. Part 2. When applicable, we comply with Part 2\u2019s heightened confidentiality rules, including restrictions on redisclosure without your written consent, except where permitted or required by law.",
                 "Conflicts of Law: Where federal or Texas law provides stronger protections, those controls.",
@@ -41,7 +41,7 @@ export default function PrivacyContent() {
             },
             {
               title: "5) Embedded Content & Third-Party Services",
-              content: "Our site may include embedded content or links (e.g., videos, articles, social media, chat widgets). These third parties may collect data, use cookies, and apply their own tracking in accordance with their privacy policies. Tru Dallas does not control third-party practices; review their policies before interacting with their content.",
+              content: "Our site may include embedded content or links (e.g., videos, articles, social media, chat widgets). These third parties may collect data, use cookies, and apply their own tracking in accordance with their privacy policies. Amity Palm Beach does not control third-party practices; review their policies before interacting with their content.",
             },
             {
               title: "6) How We Use and Disclose Website (Non-PHI) Information",
@@ -65,7 +65,7 @@ export default function PrivacyContent() {
             },
             {
               title: "11) Complaints or Questions",
-              content: "You may file a complaint or ask questions without fear of retaliation. Contact our Privacy Official at: 2219 W Euless Blvd Suite #200, Euless, TX 76040 or info@dallasdetox.com. You may also file a complaint with the U.S. Department of Health & Human Services, Office for Civil Rights (OCR) at hhs.gov/ocr/privacy/hipaa/complaints.",
+              content: "You may file a complaint or ask questions without fear of retaliation. Contact our Privacy Official at: 2901 Broadway, West Palm Beach, FL 33407 or info@amitypb.com. You may also file a complaint with the U.S. Department of Health & Human Services, Office for Civil Rights (OCR) at hhs.gov/ocr/privacy/hipaa/complaints.",
             },
             {
               title: "12) Updates to this Policy",
